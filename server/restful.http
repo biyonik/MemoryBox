@@ -1,0 +1,28 @@
+### Get All
+GET {{BASE_URL}}/memory
+
+### Get By Id
+GET {{BASE_URL}}/memory/<<MEMORY_ID>>
+
+### Add a memory
+POST {{BASE_URL}}/memory/
+Content-Type: application/json
+
+{
+  "title": "A memory",
+  "content": "A memory content",
+  "creator": "John Doe"
+}
+
+### Update a memory
+PUT {{BASE_URL}}/memory/<<MEMORY_ID>>
+Content-Type: application/json
+
+{
+  "title": "A memory but updated",
+  "content": "A memory but updated content",
+  "creator": "John Doe"
+}
+
+### Delete a memory
+DELETE {{BASE_URL}}/memory/<<MEMORY_ID>>
